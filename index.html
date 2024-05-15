@@ -24,11 +24,24 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <!-- https://www.cdnfonts.com/northstar-3d.font -->
+    <!-- Important to add preconnect so the font is loaded before the page is rendered -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
     <link href="https://fonts.cdnfonts.com/css/northstar-3d" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-black muli">
-    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+  <body class="bg-black kanit-regular">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/vid/bg-video.mp4" type="video/mp4" />
+    </video>
+    <nav
+      class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-vid-opacity-2"
+    >
       <div class="flex justify-between">
         <a href="#" class="flex items-center p-2 mr-4 no-underline">
           <img class="max-h-l2 w-auto" src="assets/images/logo.png" />
@@ -48,39 +61,37 @@
       >
         <a
           href="#home"
-          class="fs-m1 mx-3 py-3 blue no-underline hover-underline"
-          style="font-family: 'Northstar Super-Italic'"
+          class="fs-m1 mx-3 py-3 blue no-underline hover-underline kanit-bold-italic"
           >Home</a
         >
         <a
           href="#features"
-          class="fs-m1 mx-3 py-3 blue no-underline hover-underline"
-          style="font-family: 'Northstar Super-Italic'"
+          class="fs-m1 mx-3 py-3 blue no-underline hover-underline kanit-bold-italic"
           >About Us</a
         >
         <a
           href="#pricing"
-          class="fs-m1 mx-3 py-3 blue no-underline hover-underline"
-          style="font-family: 'Northstar Super-Italic'"
+          class="fs-m1 mx-3 py-3 blue no-underline hover-underline kanit-bold-italic"
           >Products</a
         >
         <a
           href="#blog"
-          class="fs-m1 mx-3 py-3 blue no-underline hover-underline"
-          style="font-family: 'Northstar Super-Italic'"
+          class="fs-m1 mx-3 py-3 blue no-underline hover-underline kanit-bold-italic"
           >Services</a
         >
         <a
           href="#"
-          class="fs-m1 button bg-blue black hover-bg-white hover-shift-t-1 fw-600 no-underline mx-5"
-          style="font-family: 'Northstar Super-Italic'"
+          class="fs-m1 button bg-blue black hover-bg-white hover-shift-t-1 fw-600 no-underline mx-5 kanit-bold-italic"
           >Contact Us</a
         >
       </div>
     </nav>
 
     <!-- hero section -->
-    <section id="home" class="min-h-100vh flex justify-start items-center">
+    <section
+      id="home"
+      class="min-h-100vh flex justify-start items-center bg-vid-opacity"
+    >
       <div class="mx-5 md-mx-l5">
         <!-- <div
           class="inline-block br-round bg-indigo-30 indigo-lightest p-2 fs-s2 mb-5"
@@ -94,18 +105,15 @@
         </div> -->
         <div>
           <h1
-            class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900"
-            style="font-family: 'Northstar Laser Italic'; letter-spacing: 5px"
+            class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 northstar-laser-italic"
           >
             <big>Z</big>enith <big>X</big>perience <br />
           </h1>
           <br />
           <h1
-            class="white fs-l2 lh-2 md-fs-l3 md-lh-1 fw-900"
-            style="font-family: 'Northstar Italic'; letter-spacing: 5px"
+            class="white fs-l2 lh-2 md-fs-l3 md-lh-1 fw-900 kanit-bold-italic"
           >
-            &gt; We craft immersive <br />
-            &nbsp; <big>XR</big> solutions.
+            &gt; We craft immersive <big>XR</big> solutions.
           </h1>
 
           <!-- <div class="br-8 mt-10 inline-flex">
@@ -126,7 +134,7 @@
     </section>
 
     <!-- features -->
-    <section id="features" class="p-10 md-p-l5">
+    <section id="features" class="p-10 md-p-l5 bg-vid-opacity">
       <div class="flex flex-column md-flex-row mx-auto">
         <div class="w-100pc md-w-40pc">
           <div class="br-8 p-5 m-5">
@@ -136,9 +144,10 @@
               <i data-feather="inbox" class="w-l5"></i>
             </div>
             <h4 class="white fw-600 fs-m3 mb-5">Lunar</h4>
-            <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">
-              App-based AR and WebAR solution sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-80">
+              App-based AR and WebAR solution sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
             </div>
             <a
               href="#"
@@ -155,7 +164,7 @@
               <i data-feather="cpu" class="w-l5"></i>
             </div>
             <h4 class="white fw-600 fs-m3 mb-5">VT≋VR</h4>
-            <div class="indigo-lightest fw-600 fs-m1 opacity-50">
+            <div class="indigo-lightest fw-600 fs-m1 opacity-80">
               Futuristic VR sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
@@ -174,9 +183,10 @@
               <i data-feather="database" class="w-l5"></i>
             </div>
             <h4 class="white fw-600 fs-m3 mb-5">Web Experiences</h4>
-            <div class="indigo-lightest fw-600 fs-m1 opacity-50">
-              We have won awards Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="indigo-lightest fw-600 fs-m1 opacity-80">
+              We have won awards Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
             </div>
             <a
               href="#"
@@ -193,9 +203,10 @@
               <i data-feather="database" class="w-l5"></i>
             </div>
             <h4 class="white fw-600 fs-m3 mb-5">Gamification</h4>
-            <div class="indigo-lightest fw-600 fs-m1 opacity-50">
-              Need any gamified thing?Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="indigo-lightest fw-600 fs-m1 opacity-80">
+              Need any gamified thing?Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
             </div>
             <a
               href="#"
@@ -208,7 +219,7 @@
     </section>
 
     <!-- slider -->
-    <section class="relative bg-indigo-lightest-10">
+    <section class="relative bg-indigo-lightest-10-custom">
       <div id="slider-1">
         <div
           class="p-10 md-p-l10 flex justify-center items-center flex-column text-center"
@@ -278,7 +289,7 @@
     </section>
 
     <!-- big text -->
-    <section class="p-10 md-py-10">
+    <section class="p-10 md-py-10 bg-black">
       <div class="w-100pc md-w-70pc mx-auto py-10">
         <h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">
           Lorem ipsum dolor sit amet,
@@ -289,7 +300,7 @@
     </section>
 
     <!-- product options -->
-    <section class="py-l10">
+    <section class="py-l10 bg-vid-opacity-2">
       <div class="flex flex-column md-flex-row md-w-80pc mx-auto">
         <div class="w-100pc md-w-50pc">
           <div
@@ -338,7 +349,7 @@
 
     <!-- pricing -->
     <section id="pricing">
-      <div class="p-10 flex flex-wrap">
+      <div class="p-10 flex flex-wrap bg-black">
         <div class="w-100pc md-w-50pc">
           <div class="p-5">
             <h4 class="white fw-800 fs-l3 mb-5">Lorem Pricing</h4>
@@ -499,10 +510,10 @@
     </section>
 
     <!-- testimonials -->
-    <section class="p-10 md-p-l5">
+    <section class="p-10 md-p-l5 bg-vid-opacity-2">
       <div id="slider-2">
         <div class="px-3">
-          <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+          <div class="p-8 br-8 bg-indigo-lightest-10-custom relative">
             <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1"
               >&#10077;</span
             >
@@ -528,7 +539,7 @@
           </div>
         </div>
         <div class="px-3">
-          <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+          <div class="p-8 br-8 bg-indigo-lightest-10-custom relative">
             <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1"
               >&#10077;</span
             >
@@ -554,7 +565,7 @@
           </div>
         </div>
         <div class="px-3">
-          <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+          <div class="p-8 br-8 bg-indigo-lightest-10-custom relative">
             <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1"
               >&#10077;</span
             >
@@ -580,7 +591,7 @@
           </div>
         </div>
         <div class="px-3">
-          <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+          <div class="p-8 br-8 bg-indigo-lightest-10-custom relative">
             <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1"
               >&#10077;</span
             >
@@ -609,7 +620,7 @@
     </section>
 
     <!-- featured blog -->
-    <section class="p-10 md-p-l10">
+    <section class="p-10 md-p-l10 bg-vid-opacity-2">
       <div class="md-w-75pc">
         <h2 class="white fs-l3 fw-900 lh-1">
           Lorem ipsum dolor sit amet, consectetur
@@ -633,7 +644,7 @@
     </section>
 
     <!-- blog -->
-    <section class="p-0 md-p-5">
+    <section class="p-0 md-p-5 bg-black">
       <div class="flex flex-wrap">
         <div class="w-100pc md-w-33pc p-10">
           <a
@@ -693,15 +704,18 @@
     </section>
 
     <!-- subscribe -->
-    <section class="p-10 md-p-l5">
+    <section class="p-10 md-p-l5 bg-vid-opacity">
       <div
-        class="br-8 bg-indigo-lightest-10 p-5 md-p-l5 flex flex-wrap md-justify-between md-items-center"
+        class="br-8 contact-custom p-5 md-p-l5 flex flex-wrap md-justify-between md-items-center"
       >
         <div class="w-100pc md-w-33pc">
-          <h2 class="white fs-m4 fw-800">Try Hook today</h2>
-          <p class="fw-600 indigo-lightest opacity-40">
-            Get first month free for commercial use. Forever free for open
-            source products.
+          <h2 class="white fs-m4 fw-800">Got an idea? Contact sales today.</h2>
+          <p class="fw-600 indigo-lightest opacity-60">
+            Got an innovative idea in VR or AR? We're all ears!
+            <br />Whether you're looking to push the boundaries of immersive
+            tech or need expert guidance on your project, our team is here to
+            help. <br />Reach out now to transform your vision into a stunning
+            virtual or augmented reality experience.
           </p>
         </div>
         <div class="w-100pc md-w-50pc">
@@ -722,7 +736,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
+    <footer class="p-5 md-p-l5 bg-black">
       <div class="flex flex-wrap">
         <div class="md-w-25pc mb-10">
           <img src="assets/images/logo.png" class="w-l5" alt="" />

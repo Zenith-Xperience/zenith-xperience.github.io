@@ -1,0 +1,92 @@
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.northstar-italic {
+  font-family: "Northstar Italic", sans-serif;
+  letter-spacing: 5px;
+}
+
+.northstar-super-italic {
+  font-family: "Northstar Laser Italic", sans-serif;
+}
+
+.northstar-laser-italic {
+  font-family: "Northstar Super-Italic", sans-serif;
+  letter-spacing: 5px;
+}
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -30;
+}
+
+.bg-vid-opacity {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-vid-opacity-2 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bg-indigo-lightest-10-custom {
+  background-color: rgba(20, 20, 20, 0.95) !important;
+}
+
+.contact-custom {
+  background-color: rgba(20, 20, 20, 0.4) !important;
+}
