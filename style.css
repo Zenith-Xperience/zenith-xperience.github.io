@@ -91,3 +91,8 @@
 .contact-custom {
   background-color: rgba(20, 20, 20, 0.4) !important;
 }
+
+.cover-image {
+  object-fit: cover;
+  opacity: 80%;
+}
