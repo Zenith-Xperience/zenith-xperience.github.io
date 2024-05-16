@@ -865,14 +865,52 @@
           </p>
         </div>
         <div class="w-100pc md-w-50pc">
-          <div class="flex my-5">
+          <div class="flex flex-column my-5">
+            <select
+              id="inq-type"
+              class="flex-grow-1 bw-0 fw-900 focus-white white opacity-80 fs-s2 p-5 br-3 m-1 bg-indigo"
+            >
+              <option disabled selected>Select Inquiry Type</option>
+              <option>Lunar</option>
+              <option>VT≋VR</option>
+              <option>When Once the Sky was Blue</option>
+              <option>DriveMe</option>
+              <option>Gamification Service</option>
+              <option>Custom Web Experience Design</option>
+              <option>
+                I have another exciting requirement not listed here
+              </option>
+            </select>
             <input
+              id="inq-name"
               type="text"
-              class="input-lg flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0"
+              class="input-lg flex-grow-1 bw-0 fw-900 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s2 py-5 br-3 m-1"
+              placeholder="Name"
+            />
+            <input
+              id="inq-email"
+              type="text"
+              class="input-lg flex-grow-1 bw-0 fw-900 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s2 py-5 br-3 m-1"
               placeholder="Email Address"
             />
+            <input
+              id="inq-subject"
+              type="text"
+              class="input-lg flex-grow-1 bw-0 fw-900 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s2 py-5 br-3 m-1"
+              placeholder="Subject"
+            />
+            <textarea
+              id="inq-message"
+              class="input-lg flex-grow-1 bw-0 fw-900 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s2 py-5 br-3 m-1"
+              rows="4"
+              style="resize: none; height: 10vh"
+            >
+Message</textarea
+            >
             <button
-              class="button-lg bg-indigo indigo-lightest fw-300 fs-s3 br-l-0"
+              id="inq-submit"
+              class="button-lg bg-indigo indigo-lightest fw-900 fs-s2 br-3 m-1"
+              onclick="submitInquiry()"
             >
               Get Started
             </button>
