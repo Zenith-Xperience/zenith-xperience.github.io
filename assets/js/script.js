@@ -17,6 +17,9 @@ $(document).ready(function () {
   // tiny slider
   $("#slider-1").slick({
     infinite: true,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
   });
