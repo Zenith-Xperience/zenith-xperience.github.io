@@ -137,10 +137,11 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg,
-      rgba(64, 158, 255, 1) 0%,
-      /* rgba(9, 86, 121, 0.8) 50%, */
-      rgba(90, 79, 207, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(64, 158, 255, 1) 0%,
+    /* rgba(9, 86, 121, 0.8) 50%, */ rgba(90, 79, 207, 1) 100%
+  );
   border-radius: 10px;
   margin: 5px 0;
 }
@@ -151,4 +152,9 @@ body {
   .title {
     margin-bottom: auto;
   }
+}
+
+/* Hide recaptcha: https://stackoverflow.com/a/44543771 */
+.grecaptcha-badge {
+  visibility: hidden !important;
 }
