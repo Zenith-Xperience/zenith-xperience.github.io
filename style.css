@@ -158,3 +158,22 @@ body {
 .grecaptcha-badge {
   visibility: hidden !important;
 }
+
+/* Fade in out for scroll hint */
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeInOutInfinite {
+  animation: fadeInOut 3s infinite;
+}
+
