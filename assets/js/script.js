@@ -16,12 +16,29 @@ $(document).ready(function () {
 
   // tiny slider
   $("#slider-1").slick({
+    dots: true,
+    arrows: false,
     infinite: true,
-    centerMode: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: $(".prev"),
-    nextArrow: $(".next"),
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    customPaging: function (slider, i) {
+      return (
+        '<div class="bg-white br-round w-1 h-1 opacity-50 mt-5" id=' +
+        i +
+        "> </div>"
+      );
+    },
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $("#slider-2").slick({
