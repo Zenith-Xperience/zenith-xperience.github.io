@@ -14,6 +14,7 @@ $(document).ready(function () {
   // smooth scroll
   var scroll = new SmoothScroll('a[href*="#"]');
 
+  // https://kenwheeler.github.io/slick/
   // tiny slider
   $("#slider-1").slick({
     dots: true,
