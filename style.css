@@ -194,6 +194,12 @@ body {
   }
 }
 
+.client-logos {
+  padding: 20px;
+  height: 100px;
+  object-fit: contain;
+}
+
 /* Hide recaptcha: https://stackoverflow.com/a/44543771 */
 .grecaptcha-badge {
   visibility: hidden !important;
