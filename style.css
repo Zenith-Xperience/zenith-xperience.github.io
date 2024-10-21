@@ -175,6 +175,25 @@ body {
   }
 }
 
+.slider-2-item {
+  height: 200px;
+}
+
+.testi-logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .testi-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 /* Hide recaptcha: https://stackoverflow.com/a/44543771 */
 .grecaptcha-badge {
   visibility: hidden !important;
