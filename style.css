@@ -150,6 +150,10 @@ body {
   flex: 1;
 
   .title {
+    height: 8rem;
+  }
+
+  .content {
     margin-bottom: auto;
   }
 }
