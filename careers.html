@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith Xperience</title>
+    <!-- https://shorthandcss.bansal.io/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- https://www.cdnfonts.com/northstar-3d.font -->
+    <!-- Important to add preconnect so the font is loaded before the page is rendered -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
+    <link href="https://fonts.cdnfonts.com/css/northstar-3d" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-black plus-jakarta-regular">
+    <video autoplay playsinline muted loop id="bg-video">
+      <source src="assets/vid/bg-video3.mp4" type="video/mp4" />
+    </video>
+    <nav
+      class="w-100pc flex flex-column md-flex-row md-px-10 bg-vid-opacity-2 navbar"
+    >
+      <h1
+        class="white northstar-laser-italic m-3"
+        style="
+          white-space: nowrap;
+          background: linear-gradient(
+            to bottom,
+            #5a4fcf,
+            #409eff
+          ); /* Indigo to purple */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+        "
+      >
+        <big>C</big>areers @
+      </h1>
+      <div class="flex justify-between">
+        <a href="#" class="flex items-center p-2 mr-4 no-underline">
+          <img class="max-h-l2 w-auto" src="assets/images/logo-color.png" />
+        </a>
+        <a
+          data-toggle="toggle-nav"
+          data-target="#nav-items"
+          href="#"
+          class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3"
+        >
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+      <div
+        id="nav-items"
+        class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center"
+      >
+        <a
+          href="/"
+          class="button-md indigo-blue white bw-0 focus-indigo no-underline hover-bg-indigo mt-5 mb-8 md-m-3 md-pb-3 fs-m1"
+          >&lt;&lt; Home</a
+        >
+      </div>
+    </nav>
+
+    <section
+      class="flex flex-column md-flex-row g-6 p-10 white mxa bg-vid-opacity"
+    >
+      <!-- Left: Job summary -->
+      <div class="flex-shrink-0 min-w-300 plus-jakarta">
+        <h2 class="fs-xl fw-700 mb-2">Open Positions</h2>
+        <div class="mb-4 border br-6 p-3 bg-indigo-dark">
+          <h3 class="fs-m1 fw-600">Immersive Xperience Developer</h3>
+          <p class="fs-s1 c-gray-700 lh-1.4">
+            AR/VR · Web 3D · XR · Unity/Unreal · React/NestJS<br />
+            <b>Location:</b> Remote/Hybrid<br />
+            <b>Type:</b> Full-Time<br />
+            <b>Experience:</b> Beginner–Intermediate
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="p-5 flex-grow-1 plus-jakarta lh-1.6 border br-6 bg-indigo-lightest-10"
+      >
+        <h1 class="fs-2xl fw-700 c-indigo mb-2">
+          Immersive Xperience Developer
+        </h1>
+        <p class="fs-sm c-gray-700 mb-5">
+          AR/VR | Web 3D | XR | Unity/Unreal | Full Stack (React/NestJS)<br />
+          <b>Location:</b> Remote or Hybrid &nbsp;|&nbsp; <b>Type:</b> Full-Time
+          &nbsp;|&nbsp; <b>Experience:</b> Beginner to Intermediate
+        </p>
+
+        <div class="mb-5">
+          <h2 class="fs-m2 fw-600 c-purple mb-2">About the Role</h2>
+          <p class="lh-1.6">
+            We’re looking for a passionate and driven Immersive Xperience
+            Developer to join our growing team. You'll work on immersive and
+            interactive applications spanning AR, VR, and 3D web technologies.
+            If you're comfortable building across the stack — from front-end UIs
+            to backend services — and have a strong foundation in immersive
+            technologies and collaboration, we’d love to meet you.
+          </p>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="fs-m2 fw-600 c-purple mb-2">What You’ll Do</h2>
+          <ul class="pl-4 lh-1.6">
+            <li>Work with Unreal Engine or Unity on AR/VR experiences.</li>
+            <li>Build Web 3D/XR apps with Three.js or React Three Fiber.</li>
+            <li>Develop scalable backends using NestJS.</li>
+            <li>Follow Git workflows, issue tracking, and best practices.</li>
+            <li>Work cross-functionally with design and product teams.</li>
+            <li>Optimize for performance and cross-device XR support.</li>
+            <li>Help the team overcome creative/technical obstacles.</li>
+          </ul>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="fs-m2 fw-600 c-purple mb-2">What We’re Looking For</h2>
+          <ul class="pl-4 lh-1.6">
+            <li>Experience with React or Angular.</li>
+            <li>Familiarity with NestJS or similar frameworks.</li>
+            <li>Unity or Unreal Engine experience in XR contexts.</li>
+            <li>Comfort with Web 3D tools like React Three Fiber.</li>
+            <li>Experience with browser-based or native AR/VR.</li>
+            <li>Git + issue tracking (Jira, GitHub) workflows.</li>
+            <li>Strong communication and team collaboration.</li>
+          </ul>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="fs-m2 fw-600 c-purple mb-2">Bonus Skills</h2>
+          <ul class="pl-4 lh-1.6">
+            <li>Interest or background in Generative AI/ML.</li>
+            <li>Mobile dev with React Native or similar tools.</li>
+            <li>
+              Understanding of spatial computing or computer vision basics.
+            </li>
+            <li>Docker and containerized dev workflows.</li>
+          </ul>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="fs-m2 fw-600 c-purple mb-2">Why Join Us?</h2>
+          <ul class="pl-4 lh-1.6">
+            <li>Work at the cutting edge of art and tech.</li>
+            <li>Collaborate on immersive, meaningful projects.</li>
+            <li>Flexible, open culture with room to grow.</li>
+          </ul>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="fs-m2 fw-600 c-purple mb-2">Apply if You...</h2>
+          <ul class="pl-4 lh-1.6">
+            <li>Love interactive 3D and immersive tech.</li>
+            <li>Want to shape the future of XR.</li>
+            <li>Thrive in collaborative, fast-moving teams.</li>
+          </ul>
+        </div>
+
+        <p class="tac mt-6">
+          <a
+            href="mailto:careers@zenithxperience.com"
+            class="button-md indigo-blue no-underline hover-bg-indigo fw-600 px-5 py-2 br-5 td-none hover:op-90"
+          >
+            Apply Now
+          </a>
+          &nbsp; Email your CV to careers [at] zenithxperience [dot] com
+        </p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 md-p-l5 bg-black">
+      <div class="flex flex-wrap">
+        <div class="md-w-25pc mb-10">
+          <img src="assets/images/logo.png" class="w-l5" alt="" />
+          <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+            <p>
+              Zenith Xperience, based in Sri Lanka, is dedicated to transforming
+              the AR and VR landscape with cutting-edge innovations. Join us in
+              revolutionizing the industry and redefining the future of
+              immersive technology.
+            </p>
+            <br />
+            <p><b>Contact</b>: hello [at] zenithxperience.com</p>
+          </div>
+        </div>
+        <div class="w-100pc md-w-50pc">
+          <div class="flex justify-around">
+            <div class="w-33pc md-px-10 mb-10">
+              <h5 class="white">Products</h5>
+              <ul class="list-none mt-5 fs-s2">
+                <li class="my-3">
+                  <a
+                    href="#products"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Lunar</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#products"
+                    class="white opacity-70 no-underline hover-underline"
+                    >VT≋VR</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#services"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Web Experiences</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#services"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Gamification</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="w-33pc md-px-10 mb-10">
+              <h5 class="white">Stuff</h5>
+              <ul class="list-none mt-5 fs-s2">
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >About Us</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Jobs</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Contact</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Media</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="w-33pc md-px-10 mb-10">
+              <h5 class="white">More Stuff</h5>
+              <ul class="list-none mt-5 fs-s2">
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Site Terms of Use</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Security</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="#"
+                    class="white opacity-70 no-underline hover-underline"
+                    >Legal</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-100pc md-w-25pc">
+          <div class="flex w-75pc md-w-100pc mx-auto">
+            <input
+              type="text"
+              class="input flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0"
+              placeholder="Email Address"
+            />
+            <button class="button bg-indigo indigo-lightest fs-s3 br-l-0">
+              Subscribe
+            </button>
+          </div>
+          <div class="flex justify-around my-8">
+            <a
+              href="https://www.linkedin.com/company/zenith-xperience"
+              target="_blank"
+              class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"
+              ><i data-feather="linkedin" class="absolute-center h-4"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/zenithxperience"
+              target="_blank"
+              class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"
+              ><i data-feather="facebook" class="absolute-center h-4"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/zenith_xperience"
+              target="_blank"
+              class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"
+              ><i data-feather="instagram" class="absolute-center h-4"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <a
+      class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline"
+      href="https://gum.co/tifJM"
+      target="_blank"
+    >
+      <i class="w-4" data-feather="download"></i>
+    </a> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdziewpAAAAALrXadLzdHEOeTs0WyJl2RTDvI16"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
